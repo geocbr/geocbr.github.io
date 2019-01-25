@@ -15,6 +15,6 @@ Whatever we make here needs to be open source, and easy to access. it is also me
 
 geoCBR is aiming to be both a community and a gateway drug to the rabbit hole of open geospatial wonderland.
 
-# will geoCBR  paid events?
+# will geoCBR accept money to show paid events?
 maybe. if so we'll charge money which will go toward hosting this community and donating to open source geospatial projects. Or expect proof-of-donation to an open source geospatial project as payment.
 
