@@ -2,7 +2,7 @@
 the geoCBR website
 
 # what is geoCBR?
-geoCBR is a place for geospatial and geospatially-interested humans in Canberra and the region nearby to build communities. Expect to see social events and other things turn up!
+geoCBR is a place for geospatial and geospatially-interested humans in Canberra and the region nearby to build communities. Expect to see social and other geo-related events turn up!
 
 # who runs geoCBR?
 you, hopefully! geoCBR is currently curated by:
@@ -11,4 +11,10 @@ you, hopefully! geoCBR is currently curated by:
 # how does geoCBR operate?
 Until we have our own Code of Conduct, we'll borrow this one: https://foss4g-oceania.org/attend/code-conduct
 
+Whatever we make here needs to be open source, and easy to access. it is also meant to be educational in a non-pointy-clicky way. Some code editing may be required to participate, but it should be really easy, straightforward code editing.
+
+geoCBR is aiming to be both a community and a gateway drug to the rabbit hole of open geospatial wonderland.
+
+# will geoCBR  paid events?
+maybe. if so we'll charge money which will go toward hosting this community and donating to open source geospatial projects. Or expect proof-of-donation to an open source geospatial project as payment.
 
