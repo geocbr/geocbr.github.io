@@ -4,6 +4,8 @@ the geoCBR website
 # what is geoCBR?
 geoCBR is a place for geospatial and geospatially-interested humans in Canberra and the region nearby to build communities. Expect to see social and other geo-related events turn up!
 
+We start with #geobeersCBR, and see where things grow...
+
 # who runs geoCBR?
 you, hopefully! geoCBR is currently curated by:
 - Adam Steer (http://github.com/adamsteer)
