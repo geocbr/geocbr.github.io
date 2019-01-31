@@ -2,37 +2,56 @@
 <html>
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"/>
+    
     <style>
-        body {
-            padding: 0;
-            margin: 0;
+         #mapid {
+            height: 600px;
         }
-        html, body, #mapid {
-            height: 100%;
-            width: 100%;
+        #topContent {
+            padding: 20px;
         }
     </style>
+
 </head>
 <body>
-     <div class="container">
-	<h1>geoCBR: a Canberra geospatial community</h1>
-	<a href="https://github.com/geocbr/geocbr.github.io/blob/master/README.md">about</a>
+    <div class="container-fluid">
+	   <div class="row" id="topContent">
+           <h1>geoCBR: a Canberra geospatial community</h1>
+    	   <a href="https://github.com/geocbr/geocbr.github.io/blob/master/README.md">about</a>
+        </div>
+        <div id="mapid" class="row"></div>
     </div>
-    <div id="mapid">
-	</div>
-    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js">
-    </script>
-    <script>
-	var mymap = L.map('mapid').setView([-35.29, 149.13], 12);
+    
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
 
-	L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+    <script src="./events.js"></script>
+    
+    <script>
+	var map = L.map('mapid').setView([-35.30691, 149.1746619], 11);
+
+	L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL'
-	}).addTo(mymap);
-	</script>
+	}).addTo(map);
+
+
+    const eventLayer = L.geoJSON(events, {
+        filter: function (feature) {
+            const eventDate = moment(feature.properties.eventDate, 'D MMMM YYYY')
+            const now = moment()
+            return eventDate.isAfter(now)
+        }
+    })
+    .bindPopup(function (layer) {
+        return `
+        <h4>${layer.feature.properties.eventDate}</h4>
+        <strong>Description:</strong> ${layer.feature.properties.description}<br>
+        <strong>Location:</strong> ${layer.feature.properties.location}`;
+    }).addTo(map);
+    
+	
+    </script>
  </body>
  </html>
-
-
-<!-- https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png -->
