@@ -4,6 +4,21 @@ const events = {
     {
       "type": "Feature",
       "properties": {
+        "location": "Capital Brewing Co",
+        "description": "geobeersCBR - with the OpenDataCube team, and sessions at Blochaus to work up a thirst",
+        "eventDate": "13 February 2019",
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.16332,
+          -35.32203
+        ]
+      }
+    }
+    {
+      "type": "Feature",
+      "properties": {
         "location": "",
         "description": "A past event will happen",
         "eventDate": "10 February 2018",
