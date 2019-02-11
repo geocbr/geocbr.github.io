@@ -47,6 +47,7 @@
     .bindPopup(function (layer) {
         return `
         <h4>${layer.feature.properties.eventDate}</h4>
+        <strong>Time:</strong> ${layer.feature.properties.eventTime}<br>
         <strong>Description:</strong> ${layer.feature.properties.description}<br>
         <strong>Location:</strong> ${layer.feature.properties.location}`;
     }).addTo(map);
