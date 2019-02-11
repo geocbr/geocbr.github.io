@@ -15,7 +15,7 @@ const events = {
           -35.32203
         ]
       }
-    }
+    },
     {
       "type": "Feature",
       "properties": {
