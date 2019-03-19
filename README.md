@@ -6,6 +6,9 @@ geoCBR is a place for geospatial and geospatially-interested humans in Canberra 
 
 We start with #geobeersCBR, and see where things grow...
 
+# ...but I can't code!
+That's OK. Just turn up to an event, make an awesome map, mentor someone, ask someone to mentor you, run an event - there are heaps of ways to be part of geoCBR. 
+
 # who runs geoCBR?
 you, hopefully! geoCBR is currently curated by:
 - Adam Steer (http://github.com/adamsteer)
@@ -20,3 +23,7 @@ geoCBR is aiming to be both a community and a gateway drug to the rabbit hole of
 
 # will geoCBR accept money to show paid events?
 maybe. if so the fees will go toward hosting this community and donating to open source geospatial projects. Or expect proof-of-donation to an open source geospatial project as payment.
+
+# how do I change things on the geoCBR website?
+Fork this repository, make changes, and submit pull requests! Look at the issues list for ideas. We'd love you to propose new things in issues so we can discuss them; and then go for pull requests. But really, we'll all discuss pull requests anyway, so however it works best for you is good.
+
