@@ -9,6 +9,7 @@ We start with #geobeersCBR, and see where things grow...
 # who runs geoCBR?
 you, hopefully! geoCBR is currently curated by:
 - Adam Steer (http://github.com/adamsteer)
+- Rowan Winsemius (https://github.com/rowanwins)
 
 # how does geoCBR operate?
 Until we have our own Code of Conduct, we'll borrow this one: https://foss4g-oceania.org/attend/code-conduct
@@ -19,4 +20,3 @@ geoCBR is aiming to be both a community and a gateway drug to the rabbit hole of
 
 # will geoCBR accept money to show paid events?
 maybe. if so the fees will go toward hosting this community and donating to open source geospatial projects. Or expect proof-of-donation to an open source geospatial project as payment.
-
